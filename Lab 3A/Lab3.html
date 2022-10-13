@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+   <title>Lab #3</title>
+   <meta charset="utf-8">
+   <script type="text/javascript" src="Lab3.js"></script>
+   <script type="text/javascript" src="jquery-3.6.1.min.js"></script>
+
+</head>
+
+<body>
+
+   <form action="/Lab3.js" method="POST">
+      <fieldset>
+         <legend> Add New Employee</legend>
+         <label for="firstlast">Name:</label>
+         <input type="text" name="firstlast" id="firstlast">
+         <label for="salary">Salary:</label>
+         <input type="number" name="number" id="number">
+         <label for="age">Age:</label>
+         <input type="number" name="age" id="age">
+         <input type="button" value="Add" onclick="Lab3.onClick_post();">
+      </fieldset>
+      <fieldset>
+         <legend> Update Employee</legend>
+         <label for="id">ID:</label>
+         <input type="number" name="id" id="id">
+         <label for="new_firstlast">New Name:</label>
+         <input type="text" name="new_firstlast" id="new_firstlast">
+         <label for="new_salary">New Salary:</label>
+         <input type="number" name="new_number" id="new_number">
+         <label for="new_age">New Age:</label>
+         <input type="number" name="new_age" id="new_age">
+         <input type="button" value="Update" onclick="Lab3.onClick_put();">
+      </fieldset>
+      <fieldset>
+         <legend> Delete Employee</legend>
+         <label for="id">ID:</label>
+         <input type="number" name="del_id" id="del_id">
+         <input type="button" value="Delete" onclick="Lab3.onClick_del();">
+      </fieldset>
+   </form>
+
+   <p>Results:</p>
+   <p><button id="input" onclick="Lab3.onClick();">Get Employee Info</button></p>
+
+   <div id="output"></div>
+
+   <script type="text/javascript">
+      $(Lab3.jQueryTest)
+   </script>
+
+</body>
+
+</html>
